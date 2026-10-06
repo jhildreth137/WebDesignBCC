@@ -17,9 +17,9 @@
 <body>
     <div id="randlist">
     </div>
-    
-    <!-- generate a random number for the purposes of having fun-->
+
     <script>
+        //variable declarations and text (should be the fourth thing on the page
         const wrapper = document.getElementById("randlist");
         var list;
         const textList = [
@@ -27,22 +27,23 @@
             "something",
             "crab"
         ];
-        
-        const rand = Math.floor(Math.random() * 2);
-       
-        if (rand){
-            list = document.createElement("ul");
-        }
-        else {
-            list = document.createElement("ol");
-        }
 
+        //generate a random number, use it to determine ordered or unordered list
+        const rand = Math.floor(Math.random() * 2);
+        
+        if (rand)
+            list = document.createElement("ul");
+        else
+            list = document.createElement("ol");
+
+        //populate the list with the text items
         for (const text of textList){
             const item = document.createElement("li");
             item.textContent = text;
             list.appendChild(item);
         }
 
+        //add the list to the container
         wrapper.appendChild(list);
     </script>
     
@@ -51,8 +52,8 @@
     <h1>Example of <strong>Contrast</strong>.</h1>
     <p>This one uses an unordered list</p>
     <ul>
-    <li></li>
-    <li></li>
+    <li>list</li>
+    <li>item</li>
     </ul>    
     <hr style="width: 90%;"/>
 
@@ -61,8 +62,8 @@
     <h1>Example of <strong>repetition</strong></h1>
     <p>This one uses an ordred list</p>
     <dl>
-    <li></li>
-    <li></li>
+    <li>list</li>
+    <li>item</li>
     </dl>    
     <hr style="width: 90%;"/>
 
@@ -81,18 +82,16 @@
     <h1>Example of <strong>Proximity</strong></h1>
     <p>This one should use a random list element! Reload the page to get a different one.</p>
     <dl>
-    <li></li>
-    <li></li>
+        <dl>#1</dl>
+        <dt>list</dt>
+        <br>
+        <dl>#2</dl>
+        <dt>item</dt>
+        <br>
     </dl>    
     <hr style="width: 90%;"/>
     
     
-
-    
-    <p> Jonathon wants to live in a world where there's lots of cheesecake. </p>
-    <p> As a scientist in a secret sci-fi facility,<br /> he has been showcased on museums. <br /> When he is not napping, you can find Jonathon exploring the moon.</p>
-    <hr style="width: 90%;"/>
-    <h4 style="font-size: 24px"> His latest book is <em>Dragon</em> and hits airwaves on 12/18/2099.</h4>
     <p style="color: blue; font-size: 20px;"> Discover how to make you see ghosts at <a href= "https://www.coolmathgames.com/"
     target= "_blank">coolmathgames.com</a></p>
     <h4>RSVP by 9/21/2026 & jhildreth137@gmail.com</h5>
