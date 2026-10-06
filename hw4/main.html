@@ -16,20 +16,34 @@
 </head>
 <body>
     <div id="randlist">
-        <ul>
-        <li></li>
-        <li></li>
-        </ul>
     </div>
     
     <!-- generate a random number for the purposes of having fun-->
     <script>
-        const rand = Math.floor(Math.random() * 2);
+        const wrapper = document.getElementById("randlist");
 
+        const textList = [
+            "bees",
+            "something",
+            "crab"
+        ];
+        
+        const rand = Math.floor(Math.random() * 2);
+       
         if (rand){
+            const list = document.createElement("ul");
         }
         else {
+            const list = document.createElement("ol");
         }
+
+        for (const text of textList){
+            const item = document.createElement("li");
+            item.textContent = text;
+            list.appendChild(item);
+        }
+
+        wrapper.appendChild(list);
     </script>
     
     <img src= "https://www.nasa.gov/wp-content/uploads/2023/04/nasa-logo-web-rgb.png"
