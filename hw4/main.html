@@ -21,7 +21,7 @@
     <!-- generate a random number for the purposes of having fun-->
     <script>
         const wrapper = document.getElementById("randlist");
-
+        var list;
         const textList = [
             "bees",
             "something",
@@ -31,10 +31,10 @@
         const rand = Math.floor(Math.random() * 2);
        
         if (rand){
-            const list = document.createElement("ul");
+            list = document.createElement("ul");
         }
         else {
-            const list = document.createElement("ol");
+            list = document.createElement("ol");
         }
 
         for (const text of textList){
