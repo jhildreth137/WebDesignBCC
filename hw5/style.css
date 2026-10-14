@@ -1,1 +1,18 @@
+body{
+    background: linear-gradient(#083172, #D3C6C5, #D3C6C5, #D3C6C5, #D3C6C5, #D3C6C5, #083172);
+}    
+
+h4 {
+    font-family: "Trebucet MS", sans-serif;
+    text-align: center;
+}
+
+p {
+    font-family: "Courier New", monospace;
+    text-align: center;
+}
+
+block {
+    border: 4px solid black;
+}
 
