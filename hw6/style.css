@@ -5,15 +5,17 @@ body{
     background-repeat: no-repeat;
 }    
 
+/* div tag */
 #not-body{
    /* This is not the body */
     background: linear-gradient(#D3C6C5, #CC5500, #CC5500, #CC5500, #CC5500, #CC5500, #D3C6C5);
     background-repeat: no-repeat;
 }
 
-h4 {
-    font-family: "Trebucet MS", sans-serif;
-    text-align: center;
+/* div class (for consecutive divs) */
+div.item {
+    background-color: white;
+    text-color: black;
 }
 
 p {
@@ -21,13 +23,39 @@ p {
     text-align: center;
 }
 
+/* modified html item */
+p.notp {
+    font-family: "Courier New", monospace;
+    text-align: center;
+    color: orange;
+}
+
 h2 {
     text-align: center;
     color: yellow;
 }
-    
-h3 {
-    text-align: center;
-    border: 2px solid black;
-    padding: 10px;
+
+/* some styles for inline elements within a block */
+/* I've been doing multiple block elements for the past 5 weeks, so I don't thinkg I need more practice with that...*/
+
+span.Spongebob {
+    background-color: #FFF31D;
+    text-color: black;
 }
+
+span.Patrick {
+    background-color: #FE9285;
+    text-color: black;
+}
+
+span.MrKrabs {
+    background-color: #F94A45;
+    text-color: black;
+}
+
+span.Squidward {
+    background-color: #B8DFD1;
+    text-color: black;
+}
+
+
