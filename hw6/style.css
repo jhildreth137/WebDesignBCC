@@ -66,33 +66,33 @@ span.Squidward {
 
 #blueblock {    
     background-color: blue;
-    width: 800px;
-    height: 400px;
+    width: 400px;
+    height: 200px;
     clear: both;
 }
 
 #greenblock {
     background-color: green;
-    width: 400px;
-    height: 200px;
+    width: 200px;
+    height: 100px;
     float: right;
 }
 
 #yellowblock {
     background-color: yellow;
-    width: 400px;
-    height: 200px;
+    width: 200px;
+    height: 100px;
     float: left;
 }
 
 #milkshake {
-    position: relative;
+    position: absolute;
     bottom: 200px
     left: 300px
 }
 
 #cat {
-    position: relative;
+    position: absolute;
     bottom: 200px
     left: 350px
     z-index: 1;
