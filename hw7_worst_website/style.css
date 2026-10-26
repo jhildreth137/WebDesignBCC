@@ -1,1 +1,99 @@
+body{
+    min-height: 100vh;
+    
+    background: linear-gradient(#CC5500, #D3C6C5, #D3C6C5, #D3C6C5, #D3C6C5, #D3C6C5, #CC5500);
+    background-repeat: no-repeat;
+}    
 
+/* div tag */
+/*This should have no padding. */
+#not-body{
+   /* This is not the body */
+    background: linear-gradient(#D3C6C5, #CC5500, #CC5500, #CC5500, #CC5500, #CC5500, #D3C6C5);
+    background-repeat: no-repeat;
+    
+}
+
+/* div class (for consecutive divs) */
+/* This is also to experiment with putting padding on the box. */
+div.item {
+    background-color: white;
+    text-color: black;
+    border-bottom: black 5px dashed;
+    padding: 5px;
+}
+
+p {
+    font-family: "Courier New", monospace;
+    text-align: center;
+}
+
+/* modified html item */
+p.notp {
+    font-family: "Courier New", monospace;
+    text-align: center;
+    color: orange;
+}
+
+/* some styles for inline elements within a block */
+/* I've been doing multiple block elements for the past 5 weeks, so I don't thinkg I need more practice with that...*/
+span.Spongebob {
+    background-color: #FFF31D;
+    text-color: black;
+}
+
+span.Patrick {
+    background-color: #FE9285;
+    text-color: black;
+}
+
+span.MrKrabs {
+    background-color: #F94A45;
+    text-color: black;
+}
+
+span.Squidward {
+    background-color: #B8DFD1;
+    text-color: black;
+}
+
+#redblock {
+    background-color: red;
+    width: 200px;
+    height: 100px;
+    float: right;
+}
+
+#blueblock {    
+    background-color: blue;
+    width: 400px;
+    height: 200px;
+    clear: both;
+}
+
+#greenblock {
+    background-color: green;
+    width: 200px;
+    height: 100px;
+    float: right;
+}
+
+#yellowblock {
+    background-color: yellow;
+    width: 200px;
+    height: 100px;
+    float: left;
+}
+
+#milkshake {
+    position: absolute;
+    bottom: 200px
+    left: 300px
+}
+
+#cat {
+    position: absolute;
+    bottom: 200px
+    left: 350px
+    z-index: 1;
+}
