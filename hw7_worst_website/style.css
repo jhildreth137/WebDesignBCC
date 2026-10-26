@@ -5,17 +5,15 @@ body{
     background-repeat: no-repeat;
 }    
 
-/* div tag */
-/*This should have no padding. */
-#not-body{
+/*THIS IS A DOOR*/
+#door{
    /* This is not the body */
     background: linear-gradient(#D3C6C5, #CC5500, #CC5500, #CC5500, #CC5500, #CC5500, #D3C6C5);
     background-repeat: no-repeat;
     
 }
 
-/* div class (for consecutive divs) */
-/* This is also to experiment with putting padding on the box. */
+/* I dont know*/
 div.item {
     background-color: white;
     text-color: black;
@@ -64,36 +62,25 @@ span.Squidward {
     float: right;
 }
 
-#blueblock {    
-    background-color: blue;
-    width: 400px;
-    height: 200px;
-    clear: both;
-}
 
-#greenblock {
-    background-color: green;
-    width: 200px;
-    height: 100px;
-    float: right;
-}
 
-#yellowblock {
-    background-color: yellow;
-    width: 200px;
-    height: 100px;
-    float: left;
-}
-
-#milkshake {
-    position: absolute;
-    bottom: 200px
-    left: 300px
-}
-
-#cat {
-    position: absolute;
-    bottom: 200px
-    left: 350px
+/*stuff for clippy and the texst bubble*/
+#clippy {
+    position: fixed;
+    bottom: 150px;
+    right: 100px;
     z-index: 1;
+}
+
+#bubble {
+    position: fixed;
+    bottom: 250px;
+    right: 350px;
+}
+
+#bubble-text {
+    position: fixed;
+    bottom: 250px;
+    right: 350px;
+    z-index: 2;
 }
