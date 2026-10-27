@@ -3,61 +3,101 @@
 <head>
     <title> Worst Mail Client in the World </title>
     <link rel="stylesheet" href="style.css">
+    <style>
+    
+    body{
+        min-height: 100vh;
+        
+        /* choose a very displeasing color */
+        background-color: #00916E;
+        background-repeat: no-repeat;
+    }   
+    
+    </style>
+    
 </head>
 <body>
     <p> This is the WOrst mail Client in thw WOrld</p>
 
     <br>
     <p>Login Page</p>
+
+    <!-- consecutive inline elements -->
+    <p> If Clippy lets you in...</p>
+    <p>Click the 1 to email as <span class="Gary">Gary</span> 
+    <span><img src= "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Gary_%28SpongeBob%29_character.png/250px-Gary_%28SpongeBob%29_character.png?utm_source=simple.wikipedia.org&utm_campaign=parser&utm_content=thumbnail"
+    style= "margin: auto; width: 5%;"/></span>
+    or click the 2 to email as <span class="Spongebob">Spongebob!</span> 
+    <span><img src= "https://m.media-amazon.com/images/I/61Y18wJ9pFL._AC_UF894,1000_QL80_.jpg" 
+    style= "margin: auto; width: 5%;"/></span>
+    </p>
     
-     <img src= "https://m.media-amazon.com/images/I/61Y18wJ9pFL._AC_UF894,1000_QL80_.jpg"
-    style= "display: block; margin: auto; max-width: 800px; width: 75%;"/>
-    <h2> Who lives in a pineapple under the sea? </h2>
 
-    <p>This is part of the body text</p>
-
-    <!-- Here's a simple div-->
-    <div id="door">
-      <p>
-          This is not part of the body text. Or is it?
-      </p>
+    
+    <!-- container that holds the 'door', and the buttons behind it-->
+    <div id="frame">
+        <!-- THis should sit in front (or behind) the two buttons -->
+        <div id="door"></div>
+            
+        <!--These are the buttons to go to the two clients. -->
+        <button type="button" id="client1_button" onclick="window.location.href='./pg1.html'"></button>
+        <button type="button" id="client2_button" onclick="window.location.href='./pg2.html'"></button>
     </div>
-
-    <br>
-    <br>
-    <br>
-    <br>
+   
+     <br>
+     <br>
+     <br>
     
     
-     <br>
-     <br>
-     <br>
-     <br>
-         
-
-    <!--THis part will have some of hte buttons to go to the next page, login, etc.-->
-    <p style="color: blue; font-size: 14px;"> If the page isn'T working, click here to try again <a href= "./hw5_main.html"
+    <!--button to reload the page, should be separate from the two clients..-->
+    <p style="color: blue; font-size: 14px;"> If the page isn'T working, click here to try again <a href= "./main.html"
     >main</a></p>
-    
-    <p style="color: blue; font-size: 14px;"> page 2 <a href= "./pg1.html"
-    >(look at cat videos)</a></p>
-
-    <p style="color: blue; font-size: 14px;"> page 3<a href= "./pg2.html"
-    >(Talk to the creator)</a></p>
+ 
 
      <br>
      <br>
      <br>
 
     <!--This has clippy and the text bubble. Should appear on every page.-->
-     <div id="clippy">
-         <img src= "https://d7hftxdivxxvm.cloudfront.net/?height=900&quality=85&resize_to=fill&src=https%3A%2F%2Fartsy-media-uploads.s3.amazonaws.com%2FmPisDeUp-bFdqp5jSaafeg%252FClippy%2Bthumb.jpg"
-         style= "display: block; margin: auto; max-width: 800px; width: 40%;"/>
+    <!-- this is an example of consecutive block elements-->>
+     <div class="clippy">
+         <img src= "https://images2.minutemediacdn.com/image/upload/c_fill,w_1200,ar_1:1,f_auto,q_auto,g_auto/shape/cover/sport/504767-Microsoft-0-e222f176920614e8ce624983c664bee4.jpg"/>
      </div>
-     <div id="bubble">  
-         <img src= "https://www.freeiconspng.com/uploads/speech-bubble-png-15.png"
-         style= "display: block; margin: auto; max-width: 800px; width: 40%;"/>
+     <div class="bubble">  
+         <img src= "https://www.freeiconspng.com/uploads/speech-bubble-png-15.png"/>
+         <div class="bubble_text" id="clippy_text"></div>
      </div>
+     
+    <script>
+        //controls whether the client will open
+       
+        const clippy_display = document.getElementById("clippy_text");
+        const door = document.getElementById("door");
+        let text = "";
+        
+
+        //generate a random number, use it to determine if you get in
+        const rand = Math.floor(Math.random() * 2);
+        
+        //you got in! Nice.
+        if (rand == 0){
+            text = "Sure, I'll let you in this time!";
+            clippy_display.textContent = text;
+            door.style.backgroundImage = 'url("https://previews.123rf.com/images/sudowoodo/sudowoodo1712/sudowoodo171200054/92547237-open-door-isolated-illustration-wooden-door-frame-in-cartoon-perspective.jpg")';
+            door.style.zIndex = 0;
+        }
+        
+        //else you didn't get in...    
+        else {
+            text = "I don't feel like letting you in. Reload the page!"
+            clippy_display.textContent = text;
+            door.style.backgroundImage = 'url("https://thumbs.dreamstime.com/b/closed-door-vector-illustration-4575815.jpg")';
+            door.style.zIndex = 3;
+            
+        }
+        
+    </script>
+
 
 </body>    
 </html>

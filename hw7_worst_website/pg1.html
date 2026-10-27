@@ -3,21 +3,117 @@
 <head>
     <title> Worst Mail Client in the World </title>
     <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <p>page should be linked from relative file path</p>
-
-    <h3>This text should have a border around it</h3>
-
-    <p>This should not</p>
     
-    <p style="color: blue; font-size: 14px;"> back to <a href= "./hw5_main.html"
+    <style>
+    
+        #send_button_1 {
+            border: 3px solid #24E7CA;
+            cursor: pointer;
+            background-image: url("https://images.rawpixel.com/image_png_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA5L2pvYjE4OTVkZXNpZ24tb25vZmZpY29ubWF4aW1pemUta2F0LWVsZW1lbnQtMDAxLWEucG5n.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color: transparent;
+            
+            width: 100px;
+            height: 50px;
+            float: right;
+        
+        }
+        
+        
+        body {
+            
+            /* choose another very displeasing color */
+            background-color: #6D7275;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+        
+        }
+        
+    
+    
+    </style>
+    
+</head>
+
+<body>
+    <p>Email Client 1</p>
+
+    <div class="result_box" id="result_box_1"></div>
+    
+    <br>
+    <br>
+    <br>
+    
+    <label for="mail_box_1" style=""></label>
+    <input type="text" 
+           class="mail_box" 
+           id="mail_box_1"
+           placeholder="Your text here">
+    
+    
+    <button id="send_button_1" type="button"></button>
+    
+    <br>
+    <br>
+    <br>
+    
+    <div class="clippy">
+         <img src= "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Gary_%28SpongeBob%29_character.png/250px-Gary_%28SpongeBob%29_character.png?utm_source=simple.wikipedia.org&utm_campaign=parser&utm_content=thumbnail"/>
+     </div>
+     <div class="bubble">  
+         <img src= "https://www.freeiconspng.com/uploads/speech-bubble-png-15.png"/>
+         <div class="bubble_text"><p> Meow Meow Meow! (What do you want to say?)</p></div>
+     </div>
+    
+    <!-- javascript to hold the array of characters input. --> 
+    <script>
+    let text_input = "";
+    
+    const display = document.getElementById("result_box_1");
+    const text_box = document.getElementById("mail_box_1");
+    const send = document.getElementById("send_button_1");
+    
+    
+    //upon page loading, load the other text element from local storage and print it.
+    const user2_mail = localStorage.getItem('mail_2');
+    
+    if(user2_mail){
+        display.textContent = user2_mail;
+    } else {
+        display.textContent = "No new messages.";
+    }
+     
+    window.addEventListener("storage", (event) => {
+        if (event.storageArea === localStorage && event.key === "mail_2")
+            display.textContent = event.newValue ?? "";
+    });
+     
+    
+    //on "send" button press, store the characters in the local storage object. 
+    send.addEventListener('click', () => {
+    
+        text_input = text_box.value;
+        
+        localStorage.setItem('mail_1', text_input);
+        alert(`sent ${text_input}`);
+        
+        //clear text box
+        text_box.value = "";
+    });
+    
+    
+    </script>
+    
+    
+    <p style="color: blue; font-size: 14px;"> back to <a href= "./main.html"
     >main</a></p>
     
-    <p style="color: blue; font-size: 14px;"> link to <a href= "https://raw.githack.com/jhildreth137/WebDesignBCC/main/hw5/hw5_absolute.html"
-    >absolute</a></p>
+    <p style="color: blue; font-size: 14px;"><a href= "./pg1.html"
+    >Refresh client</a></p>
 
-    <p style="color: blue; font-size: 14px;"> link to <a href= "./hw5_relative.html"
-    >relative</a></p>
+    <p style="color: blue; font-size: 14px;"><a href= "./pg2.html"
+    >Client 2</a></p>
 </body>    
 </html>
