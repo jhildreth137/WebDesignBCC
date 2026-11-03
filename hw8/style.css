@@ -32,6 +32,13 @@ ul {
     text-align: left;
 }
 
+button {
+    font-size: 14px;
+    padding: 10px 8px;
+    background-color: white;
+    text-color: black;
+}
+
 navigation ul {
   list-style: none;
   background-color: #999;
