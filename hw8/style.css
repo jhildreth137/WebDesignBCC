@@ -37,7 +37,7 @@ article {
 }
 
 section {
-    background-color: #00101A;
+    background-color: #FFC1CA;
     border-radius: 4px;
 }
 
@@ -54,27 +54,29 @@ button {
     background-color: white;
     text-color: black;
     border: 2px solid black;
+    
 }
 
 navigation ul {
-  list-style: none;
-  background-color: #999;
-  padding: 0;
+    text-align: center;
+    list-style: none;
+    background-color: #999;
+    padding: 0;
 }
 
 navigation li {
-  display: inline-block;
-  width: 80px;
-  text-align: center;
+    display: inline-block;
+    width: 80px;
+    text-align: center;
 }
 
 navigation a {
-  text-decoration: none;
-  color: white;
-  display: block;
-  padding: 20px 10px;
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 20px 10px;
 }
 
 navigation a:hover {
-  background-color: #666;
+    background-color: #666;
 }
