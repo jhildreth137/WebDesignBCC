@@ -51,6 +51,7 @@ aside {
 }
 
 button {
+    display: block;
     font-size: 14px;
     padding: 10px 8px;
     background-color: white;
@@ -59,10 +60,15 @@ button {
     
 }
 
+/* Yeah, keeping this mostly the same as the example. If it ain't broke, don't fix it*/
+navigation{
+    margins: auto;
+}
+    
 navigation ul {
     text-align: center;
     list-style: none;
-    background-color: #999;
+    background-color: #FFFBDB;
     padding: 0;
 }
 
