@@ -5,23 +5,42 @@ body{
     background-repeat: no-repeat;
 }    
 
-h4 {
-    font-family: "Trebucet MS", sans-serif;
-    text-align: center;
-}
+
 
 p {
     font-family: "Courier New", monospace;
     text-align: center;
 }
 
+h1 {
+    text-align: center;
+    color: black;
+}
+
 h2 {
     text-align: center;
-    color: yellow;
+    color: black;
 }
-    
-h3 {
-    text-align: center;
-    border: 2px solid black;
-    padding: 10px;
+
+navigation ul {
+  list-style: none;
+  background-color: #999;
+  padding: 0;
+}
+
+navigation li {
+  display: inline-block;
+  width: 80px;
+  text-align: center;
+}
+
+navigation a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 20px 10px;
+}
+
+navigation a:hover {
+  background-color: #666;
 }
