@@ -22,6 +22,16 @@ h2 {
     color: black;
 }
 
+.contianer {
+    text-align: center;
+}
+
+ul {
+    font-family: "Courier New", monospace;
+    display: inline-block;
+    text-align: left;
+}
+
 navigation ul {
   list-style: none;
   background-color: #999;
