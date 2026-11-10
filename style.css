@@ -1,0 +1,62 @@
+.header {
+	padding: 20px 0 0 0;
+}
+
+.navigation {
+	padding: 60px 0 0 0;
+}
+
+button {
+    display: block;
+    width: 100%;
+    height: 80px;
+    font-size: 20px;
+    padding: 10px 8px;
+    background-color: yellow;
+    text-color: black;
+    border: 2px solid black;
+    border-radius: 10px;
+    
+    transition: transform 0.2s ease-in-out;
+    
+}
+
+button:hover {
+    display: block;
+    background-color: #E6CC00;
+    border-radius: 15px;
+    transform: scale(1.1);
+    
+    
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(#00A5CF, #9FFFCB, #25A18E, #7AE582);
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+}
+
+.container_12 img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+hr {
+    width: 85%;
+    height: 5px;
+    background-color: black;
+    margin: auto;
+}
+
+.container_12 h1 {
+    margin: auto;
+}
+
+.interactable img:hover, img:focus {
+    border-radius: 15px;
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in-out;
+}
