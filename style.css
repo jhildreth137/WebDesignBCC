@@ -1,0 +1,140 @@
+.header {
+	padding: 20px 0 0 0;
+}
+
+hr {
+    width: 85%;
+    height: 5px;
+    background-color: black;
+    margin: auto;
+}
+
+div {
+    margin: auto;
+    width: 100%;
+    text-align: center;
+}
+
+div img {
+    margin: auto;
+}
+
+.interactable img:hover, img:focus {
+    border-radius: 15px;
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in-out;
+    filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.5));
+}
+
+
+@media screen and (min-width: 940px){
+
+    .Spongebob {
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .Patrick {
+        display: none;
+    }
+    
+    .MrKrabs {
+        display: none;
+    }
+
+    .Plankton {
+        display: none;
+    }
+
+    body {
+        min-height: 100vh;
+        background: linear-gradient(#00A5CF, #9FFFCB, #25A18E, #7AE582);
+        background-repeat: no-repeat;
+        background-attachment:fixed;
+    }
+
+}
+
+
+@media screen and (400px <= width <= 940px){
+
+    .Spongebob {
+        display: none; 
+    }
+    
+    .Patrick {
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .MrKrabs {
+        display: none;
+    }
+
+    .Plankton {
+        display: none;
+    }
+
+    body {
+        min-height: 100vh;
+        background: linear-gradient(#FADE77, #CBBD93);
+        background-repeat: no-repeat;
+        background-attachment:fixed;
+    }
+
+}
+
+@media screen and (max-width: 400px]){
+
+    .Spongebob {
+        display: none; 
+    }
+    
+    .Patrick {
+        display: none;
+    }
+    
+    .MrKrabs {
+        display: none;
+    }    
+    
+    .Plankton {
+        display: block;
+        margin: 0 auto;
+    }
+
+    body {
+        min-height: 100vh;
+        background: #DEDEDE;
+        background-repeat: no-repeat;
+        background-attachment:fixed;
+    }
+
+}
+
+
+@media print{
+
+    .Spongebob {
+        display: none; 
+    }
+    
+    .Patrick {
+        display: none;
+    }
+    
+    .MrKrabs {
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .Plankton {
+        display: none;
+    }
+
+    body {
+        background: white;
+    }
+
+}
+
